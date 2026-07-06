@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questions fréquentes | DodoFinance</title>
+<meta name="description" content="Sécurité, pseudonymat, synchronisation bancaire, reprise d'historique Excel, réversibilité : les réponses franches aux questions qui comptent.">
+<link rel="canonical" href="https://www.dodofinance.io/questions">
+<meta property="og:title" content="Questions fréquentes | DodoFinance">
+<meta property="og:description" content="Sécurité, pseudonymat, synchronisation bancaire, reprise d'historique Excel, réversibilité : les réponses franches aux questions qui comptent.">
+<meta property="og:image" content="https://www.dodofinance.io/assets/dashboard.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" type="image/png" href="/assets/dodo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/">
+      <img src="/assets/dodo.png" alt="DodoFinance">
+      <b>DodoFinance</b>
+    </a>
+    <nav>
+      <a href="/" data-page="accueil">Accueil</a>
+      <a href="/fonctionnalites" data-page="fonctionnalites">Fonctionnalités</a>
+      <a href="/tarifs" data-page="tarifs">Tarifs</a>
+      <a href="/securite" data-page="securite">Sécurité</a>
+      <a href="/questions" class="active" data-page="questions">Questions</a>
+    </nav>
+    <a class="btn btn-ghost" href="https://dodofinance.io/login">Espace bêta</a>
+    <a class="btn btn-primary" href="mailto:contact@dodofinance.io?subject=Acc%C3%A8s%20b%C3%AAta%20DodoFinance">Rejoindre la bêta</a>
+  </div>
+</header>
+<main>
+
+  <div class="wrap page-head">
+    <div class="eyebrow">Questions fréquentes</div>
+    <h1>Ce que tu te demandes <em>sûrement</em></h1>
+    <p class="sub"></p>
+  </div>
+  <div class="wrap section tight faq">
+    <details>
+      <summary>Qui est derrière DodoFinance ?</summary>
+      <p>Un investisseur indépendant, ingénieur, qui a construit l'outil dont il avait besoin après des années de suivi sous Excel et des essais déçus de toutes les applications du marché. DodoFinance est développé et hébergé en France, sans levée de fonds ni conflit d'intérêts&nbsp;: le seul modèle économique est l'abonnement.</p>
+    </details>
+    <details>
+      <summary>Mes données sont-elles en sécurité ?</summary>
+      <p>Les données personnelles sont chiffrées en base, l'accès est protégé par double authentification, chaque action est tracée, et l'ensemble est hébergé en France avec des sauvegardes chiffrées hors site. Le détail est sur la <a href="/securite">page Sécurité</a>.</p>
+    </details>
+    <details>
+      <summary>Que verrait un pirate si la base fuyait ?</summary>
+      <p>Des chiffres rattachés à personne. Les données d'identité (noms, prénoms, adresses, emails, clauses bénéficiaires, identités de locataires) sont chiffrées (AES-256) avec une clé qui ne vit pas dans la base&nbsp;: une copie volée livre des montants et des courbes reliés à des identifiants techniques, pas à toi. Les mots de passe sont hachés (jamais stockés en clair) et tes identifiants bancaires ne sont tout simplement pas chez nous (ils restent chez l'agrégateur agréé). Soyons complets&nbsp;: les libellés que tu choisis toi-même (noms de comptes, d'actifs) restent lisibles, libre à toi de les nommer sobrement. C'est une différence de fond avec un tableur Excel qui, lui, expose tout en clair au premier vol d'ordinateur.</p>
+    </details>
+    <details>
+      <summary>Puis-je utiliser DodoFinance sans donner mon vrai nom ?</summary>
+      <p>Oui, complètement. DodoFinance n'est pas un établissement financier&nbsp;: aucun KYC, aucun justificatif d'identité, aucune donnée obligatoire au-delà d'un email de connexion (qui peut être un alias neutre). Tu peux suivre l'intégralité de ton patrimoine sous pseudonymes («&nbsp;M.&nbsp;», «&nbsp;Mme&nbsp;», «&nbsp;Holding H&nbsp;»…)&nbsp;: tous les calculs, l'IFI, les bilans fonctionnent à l'identique. Seule la synchronisation bancaire fait entrer des libellés réels, et elle est optionnelle&nbsp;: en saisie et imports manuels, rien ne permet de te relier à ton espace.</p>
+    </details>
+    <details>
+      <summary>Comment fonctionne la synchronisation bancaire ?</summary>
+      <p>Via <b>Powens</b>, agrégateur français leader du marché, agréé par l'ACPR, en lecture seule&nbsp;: tes identifiants bancaires ne transitent jamais par DodoFinance. Pour chaque banque, l'app t'indique ce que l'agrégateur conserve (jeton révocable en open banking, ou identifiants pour les établissements en connexion directe). Et la synchronisation reste optionnelle&nbsp;: imports de relevés + mise à jour automatique quotidienne des cours si tu préfères ne rien connecter.</p>
+    </details>
+    <details>
+      <summary>Je gère tout dans Excel depuis des années. Je peux reprendre mon historique ?</summary>
+      <p>Oui, c'est même un cas d'usage fondateur&nbsp;: import de l'historique de valorisations par collage ou CSV, reprise des flux, et tes courbes et TRI repartent de l'origine (pas de la date d'inscription).</p>
+    </details>
+    <details>
+      <summary>Et mes comptes que les agrégateurs ne gèrent pas ?</summary>
+      <p>Assurance-vie luxembourgeoise, private equity, crowdfunding, wallets crypto, comptes exotiques&nbsp;: tu importes un relevé PDF ou une simple capture d'écran, DodoFinance l'analyse et met à jour tes positions. C'est le filet de sécurité qui couvre ce que la synchronisation ne voit pas.</p>
+    </details>
+    <details>
+      <summary>Ma famille peut-elle utiliser le même espace ?</summary>
+      <p>Oui. Un espace DodoFinance est un espace <em>famille</em>&nbsp;: plusieurs utilisateurs, chacun avec son accès (administrateur ou lecture seule), et le patrimoine consolidé par personne, par société ou pour tout le foyer.</p>
+    </details>
+    <details>
+      <summary>Ça marche sur mobile ?</summary>
+      <p>Oui&nbsp;: DodoFinance s'installe sur ton téléphone comme une application (iOS et Android), avec un mode discrétion pour consulter dans les transports.</p>
+    </details>
+    <details>
+      <summary>DodoFinance me donne-t-il des conseils d'investissement ?</summary>
+      <p>Non, et c'est un choix&nbsp;: DodoFinance est un outil de suivi et d'aide déclarative, pas un conseiller. Il ne vend aucun produit, ne touche aucune rétrocommission et ne te dira jamais quoi acheter. Les montants fiscaux pré-calculés sont une aide au remplissage&nbsp;: tu restes responsable de tes déclarations.</p>
+    </details>
+    <details>
+      <summary>Si j'arrête, je récupère quoi ?</summary>
+      <p>Tout. Export complet de tes données (CSV) et de tes documents à tout moment, sans conditions. Tes données ne sont jamais otages.</p>
+    </details>
+  </div>
+
+</main>
+<section class="final">
+  <div class="wrap">
+    <div class="final-card">
+      <h2>Envie de voir <em>ton</em> patrimoine comme ça&nbsp;?</h2>
+      <p>La bêta privée est ouverte à quelques utilisateurs exigeants. Accès gratuit, retours francs bienvenus, tarif fondateur à vie à la clé.</p>
+      <a class="btn btn-primary btn-big" href="mailto:contact@dodofinance.io?subject=Acc%C3%A8s%20b%C3%AAta%20DodoFinance">Demander un accès bêta</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <a class="brand" href="/">
+        <img src="/assets/dodo.png" alt="">
+        <b>DodoFinance</b>
+      </a>
+      <div class="foot-links">
+        <a href="/fonctionnalites">Fonctionnalités</a>
+        <a href="/tarifs">Tarifs</a>
+        <a href="/securite">Sécurité</a>
+        <a href="https://dodofinance.io/login">Espace bêta</a>
+        <a href="mailto:contact@dodofinance.io">Contact</a>
+      </div>
+    </div>
+    <div class="foot-legal">
+      © 2026 DodoFinance. Développé et hébergé en France. Les captures présentent un compte de démonstration.
+      DodoFinance est un outil de suivi patrimonial&nbsp;; il ne fournit ni conseil en investissement, ni conseil fiscal personnalisé.
+    </div>
+  </div>
+</footer>
+</body>
+</html>
